@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello TTJ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    #loading {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #loading.hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">
+    <h1>Loading...</h1>
+  </div>
+  <div id="app" style="display:none;">
+    <h1>Hello ttj</h1>
+    <div class="menu">
+      <a href="https://cafe.naver.com/tothej">수강생카페</a>
+      <a href="https://ttj.kr" target="_blank">강의실</a>
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle">꿀팁 저장소</a>
+        <div class="dropdown-content">
+          <a href="https://repa.ng/" class="internal">쿠팡 반품 검색기</a>
+          <a href="https://qicut.com/" class="internal">URL SHORTER</a>
+          <a href="https://animalage.foruhub.com/" class="internal">우리집모기 수명 계산기</a>
+          <a href="https://moamaple.com/" class="internal">메이플 스토리 캐릭터 조회</a>
+          <a href="https://goldhub.co.kr/%EA%B5%B0%EC%A0%81%EA%B8%88-%EB%A7%8C%EA%B8%B0-%EC%88%98%EB%A0%B9-%EC%96%BC%EB%A7%88/" class="internal">군적금 만기수령 계산기</a>
+          <a href="https://goldhub.co.kr/emoticon.html#google_vignette" class="internal">이모티콘 모음 종결자</a>
+          <a href="https://watchoutnumbers.com/" class="internal">스캠 번호 조회기</a>
+          <a href="https://ggameboy.com/%eb%ac%b4%ec%84%a4%ec%b9%98%ea%b2%8c%ec%9e%84-%ed%81%ac%eb%a6%ac%ec%8a%a4%eb%a7%88%ec%8a%a4%ec%84%a0%eb%ac%bc/" class="internal">무설치 게임</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jOTfBlKSQYY?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="version"></div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

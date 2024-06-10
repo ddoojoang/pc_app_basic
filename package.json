@@ -1,0 +1,65 @@
+{
+  "name": "pc_app_basic",
+  "version": "1.0.0",
+  "description": "app설명",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --w",
+    "release": "electron-builder -w -p always"
+  },
+  "repository": "https://github.com/ddoojoang/pc_app_basic",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "ddoojoang",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.4.4",
+    "electron-builder": "^25.0.0-alpha.9",
+    "electron-icon-maker": "^0.0.5",
+    "nodemon": "^2.0.0"
+  },
+  "build": {
+    "appId": "com.ddoojoang.basic",
+    "copyright": "© 2023 ddoojoang. All rights reserved.",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "ddoojoang",
+        "repo": "pc_app_basic",
+        "releaseType": "release"
+      }
+    ]
+  },
+  "mac": {
+    "category": "public.app-category.productivity",
+    "target": "dmg"
+  },
+  "linux": {
+    "category": "Utility"
+  },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "verifyUpdateCodeSignature": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+  "dependencies": {
+    "electron-log": "^5.1.5",
+    "electron-updater": "^6.3.0-alpha.4"
+  }
+}
